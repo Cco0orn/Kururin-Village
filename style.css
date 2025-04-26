@@ -1,0 +1,51 @@
+body {
+	 background-color: #42a97e;
+}
+
+.grid-wrapper {
+     font-family: 'Open Sans', sans-serif;
+	 text-align: center;
+	 background-repeat: repeat-x;
+	 background-size: 770px;
+	 color: #783818;
+	 margin: 0;
+	 display: grid;
+	 grid-template-columns: min-content 1fr;
+	 grid-template-rows: min-content 1f min-content;
+	 width: 960px;
+	 gap: 1em;
+	 margin: 1em auto;
+}
+
+nav menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header, footer{
+	grid-column: span 2;
+}
+
+nav, header, main, footer{
+	border-radius: 1em;
+    background-image: url("bg_02.png");
+	display: block;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+html {
+	 cursor:url('https://kururinvillage.neocities.org/icon.png'), auto;
+}
+
+.bg { background: url("bg.png") repeat-x; position: absolute; width: 5760px; z-index: -1; height: 100%; animation: slide 210s linear infinite; }
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1920px, 0, 0); /* The image width */
+  }
+}
